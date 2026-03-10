@@ -1,16 +1,36 @@
-# **QSAR Modeling of P53-MDM2 Inhibitors**
+# QSAR Modeling of p53–MDM2 Inhibitors
 
-**This project focuses on computational drug design using cheminformatics approaches. The main workflow includes:**
+This repository presents a computational workflow for building QSAR models to predict the activity of small molecules targeting the p53–MDM2 protein–protein interaction, an important target in anticancer drug discovery.
 
-## **Data Insllation**: Downloaded and curated data from ChEMBL resources.
+The project applies cheminformatics techniques and machine learning methods to analyze molecular structures and identify patterns associated with biological activity.
 
-## **Feature Generation**: Calculated Morgan fingerprints for molecules to capture structural features.
+## Workflow
 
-## **Machine Learning Predictions**:
+### 1. Data Collection and Curation
+Bioactivity data were retrieved from the ChEMBL database and curated for modeling.
 
-### Random Forest for activity prediction.
+### 2. Feature Generation
+Molecular representations were generated using Morgan fingerprints to capture structural features of the compounds.
 
-### Support Vector Machine (SVM) for activity prediction.
-## **Clustering Analysis**: Applied K-Means clustering to identify patterns and group similar compounds.
+### 3. Machine Learning Modeling
+Two machine learning algorithms were applied for activity prediction:
 
-**This repository provides scripts and examples to reproduce the workflow and explore predictive modeling in drug design.**
+- Random Forest  
+
+- Support Vector Machine (SVM)
+
+### 4. Clustering Analysis
+
+K-Means clustering was used to explore structural similarity and group compounds with related structural patterns.
+
+## Purpose
+
+The goal of this project is to demonstrate how cheminformatics and machine learning approaches can be integrated to support computational drug discovery and predictive modeling.
+
+## Tools and Libraries
+
+- Python  
+- RDKit  
+- Scikit-learn  
+- Pandas  
+- NumPy
